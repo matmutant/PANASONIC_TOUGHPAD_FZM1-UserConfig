@@ -6,6 +6,14 @@ The following is my own Windows11/FydeOS/... UserConfig on a PANASONIC TOUGHPAD 
 ## Why going rugged?
 You already know why.
 
+## Hardware
+### Disassembly guides
+#### Video by protoncomputers
+[![Watch the video](https://img.youtube.com/vi/g2-gWtlfr4U/hqdefault.jpg)](https://youtu.be/g2-gWtlfr4U)
+
+#### Full disassembly guide (pdf) by MrJoshua
+[Read it here](https://tigerstyle.co.uk/docs/MrJoshuaFZM1.pdf) | [Mirror as of 2024-08-21](MrJoshuaFZM1.pdf)
+
 ## Panasonic Recovery Disc Creation Utility
 [Recovery Disc Creation Utility (Recovery Image Downloading Edition) for Windows 10 Recovery Image Download Service (v5.00L10) - Windows 10 preinstalled model ](https://global-pc-support.connect.panasonic.com/dldocs/079074)
 
