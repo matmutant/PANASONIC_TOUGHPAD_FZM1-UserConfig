@@ -1,5 +1,5 @@
 # PANASONIC_TOUGHPAD_FZM1-UserConfig
-The following is my own Windows11/FydeOS/... UserConfig on a PANASONIC TOUGHPAD FZ-M1
+The following is my own Windows11/FydeOS/Debian13.7/Bunsenlabs Carbon/... UserConfig on a PANASONIC TOUGHPAD FZ-M1
 > [!CAUTION]
 > The following shall be followed carefully as it is nothing but an end-user notepad listing things that worked (or didn't) at some point of time
 
@@ -25,7 +25,25 @@ Under accessibility setings, look for "Keyboard and text input" menu. There sele
 #### Access the keyboard from the logon screen
 Under accessibility settings, select "Display accessibility options from Quick Settings"
 
-## Rear camera support [WIP]
+## Additional Panasonic Hardware support
+### Touch mode and passive stylus
+See the excellent work done by MichaelH1981: [FZ-M1-Touch-Mode](https://github.com/MichaelH1981/fz-m1-touch-mode/blob/main/README.en.md). In a few words, it allows for a full support of the capacities/modes of the screen digitizer, including: 
+- touch
+- pen
+- pen-touch
+- glove
+- water
+
+Making it possible to use stock Panasonic passive stylus which was not possible untill September 2026.
+
+### Programmable buttons
+In order to make programmable buttons work, two opposite approches have been used : 
+- Specific [kernel module](https://github.com/matmutant/tbtn-driver) adapted for the FZ-M1 based on [tbtn driver](https://github.com/matmutant/tbtn-driver) for FZ-G1.
+- Dedicated [service](https://github.com/MichaelH1981/fz-m1-buttons) which allows for it to work without worrying about direct kernel compatibility. 
+
+### Rear camera support [WIP]
+> [!NOTE]
+> Rear camera is still a black hole in the config. I couldn't make it work and apparently no one else did either.
 
 dmesg outputs :
 ```
