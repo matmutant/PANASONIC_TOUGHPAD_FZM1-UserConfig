@@ -19,7 +19,7 @@ You already know why.
 
 ## Gnome-based DE
 ### How to use the FZ-M1 without any external KeyBoard
-#### Access the keyboard inside FydeOS 
+#### Access the keyboard from inside the Gnome based DE
 Under accessibility setings, look for "Keyboard and text input" menu. There select "Virtual Keyboard"
 
 #### Access the keyboard from the logon screen
