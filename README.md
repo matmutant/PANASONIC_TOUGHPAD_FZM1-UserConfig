@@ -18,6 +18,8 @@ You already know why.
 #### KB Docking port analysis
 ![KB_docking_port](/Ressources/KB_Docking_Port.jpg)
 
+![Picture of inside of the tablet docking port](Ressources/Docking_Port_Inside_.jpg)
+
 #### KB "USB" port analysis
 ![KB_USB_port](/Ressources/KB_USB_port.jpg)
 I got the following pinout for the little 4 pins port near the pogo pins of the iKey IK-PAN-FZM1-C1 keyboard:
@@ -28,9 +30,10 @@ I got the following pinout for the little 4 pins port near the pogo pins of the 
 - The fourth pin is connected to pogo pins 1 & 24, previously identified and confirmed as GND (0Ω to GND pin of KB external USB port)
 
 #### FZ-VEBM12 Docking port analysis
+
 - GND: 1, 5, 8, 15, 18, 21, 24 
 - ? but shorted together: 2, 3, 4
-- (5VCC from tablet): 5, 6
+- (5VCC from tablet): 6, 7
 - +5.2V: 9
 - 100Ω bridge: 10, 12
 - ?: 11
