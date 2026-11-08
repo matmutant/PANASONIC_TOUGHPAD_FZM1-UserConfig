@@ -14,6 +14,34 @@ You already know why.
 #### Full disassembly guide (pdf) by MrJoshua
 [Read it here](https://tigerstyle.co.uk/docs/MrJoshuaFZM1.pdf) | [Mirror as of 2024-08-21](MrJoshuaFZM1.pdf)
 
+### Docking Port pinout
+#### KB Docking port analysis
+![KB_docking_port](/Ressources/KB_Docking_Port.jpg)
+
+#### KB "USB" port analysis
+![KB_USB_port](/Ressources/KB_USB_port.jpg)
+I got the following pinout for the little 4 pins port near the pogo pins of the iKey IK-PAN-FZM1-C1 keyboard:
+
+- The first pin is connected to pogos pin connectors 6 & 7, previously identified as VCC/5V by u/michielsanders
+- The second pin is connected to pogo pin 17, previously identified as D+
+- The third pin is connected to pogo pin 16, previously identified as D-
+- The fourth pin is connected to pogo pins 1 & 24, previously identified and confirmed as GND (0Ω to GND pin of KB external USB port)
+
+#### FZ-VEBM12 Docking port analysis
+- GND: 1, 5, 8, 15, 18, 21, 24 
+- ? but shorted together: 2, 3, 4
+- (5VCC from tablet): 5, 6
+- +5.2V: 9
+- 100Ω bridge: 10, 12
+- ?: 11
+- +3.3V: 13, 14
+- (D- from tablet): 16
+- (D+ from tablet): 17
+- ?: 19
+- ?: 20
+- ?: 22
+- ?: 23 
+
 ## Panasonic Recovery Disc Creation Utility
 [Recovery Disc Creation Utility (Recovery Image Downloading Edition) for Windows 10 Recovery Image Download Service (v5.00L10) - Windows 10 preinstalled model ](https://global-pc-support.connect.panasonic.com/dldocs/079074)
 
