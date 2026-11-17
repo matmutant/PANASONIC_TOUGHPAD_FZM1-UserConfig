@@ -65,12 +65,25 @@ See the excellent work done by MichaelH1981: [FZ-M1-Touch-Mode](https://github.c
 - glove
 - water
 
-Making it possible to use stock Panasonic passive stylus which was not possible untill September 2026.
+Making it possible to use stock Panasonic passive stylus which was not possible until September 2026.
 
 ### Programmable buttons
-In order to make programmable buttons work, two opposite approches have been used : 
+In order to make programmable buttons work, two opposite approaches have been used : 
 - Specific [kernel module](https://github.com/matmutant/tbtn-driver) adapted for the FZ-M1 based on [tbtn driver](https://github.com/matmutant/tbtn-driver) for FZ-G1.
 - Dedicated [service](https://github.com/MichaelH1981/fz-m1-buttons) which allows for it to work without worrying about direct kernel compatibility. 
+
+### Ultra low backlight support
+Although Gnome Shell only allows for 75 as minimal screen brightness, the hardware actually supports much lower values, as low as 15 still very readable or 5 (barely readable but still without any visible flicker). As the slider seems not to be configurable, install and use ```brightnessctl```   
+```
+brightnessctl set 15
+```
+Sadly this won't make the slider go lower, it only allows to override it on a per need basis.  
+
+On systems using ```xfce4-power-manager```, simply override the lower limit by adding a configuration  property :  
+```
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/brightness-slider-min-level -t int -s 15 --create
+```
+
 
 ### Rear camera support [WIP]
 > [!NOTE]
